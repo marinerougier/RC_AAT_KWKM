@@ -151,8 +151,9 @@
         stimulus: function () {
             var html = "";
             html += "<h1>Task 2: Categorization task</h1>";
-            html += "<p class = 'justify'>At each trial, your task is to choose among the 12 faces ";
-            html += "the one that you think is <b>the most similar to an African American face.</b> ";
+            html += "<p class = 'justify'>At each trial, your task is to choose, among the 12 faces, ";
+            html += "<b>the most Black-looking face</b>. Note that this task is independent from the Video Game task (Task 1). ";
+            html += "<b>You have to choose the face that is the most typical of a Black person in general</b> (regardless the faces that were displayed in the Video Game task). ";
             html += "<p class = 'justify'>Use your mouse to select a face at each trial.</p>";
             html += "<img width='200' style='padding: 0px' src='" + imgLink(474, 'ori') + "'>";
             return html;
@@ -193,7 +194,7 @@
             type: 'html-mouse-response',
             stimulus: function () {
                 html = "";
-                html += "<p>Select the face that you think is the most similar to <b>an African American face</b> </br></br>";
+                html += "<p>Select the most <b>Black-looking face</b> </br></br>";
                 jsPsych.timelineVariable('trialImgs', true).map(function (e) {
                     html += "<img class='rcimg-12' src='" + e + "'>";
                 });
@@ -223,8 +224,8 @@
     var ThermoScale = ["1</br>Coldest feelings", "2", "3", "4", "5", "6", "7", "8", "9</br>Warmest feelings"];
 
     var ThermoGrpItems = [
-        'European American people',
-        'African American people',
+        'Black people',
+        'White people',
     ];
 
 
